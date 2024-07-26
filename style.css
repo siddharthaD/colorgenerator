@@ -91,7 +91,7 @@ input[type=color]
   display: grid;
   grid-template: repeat(6,1fr) 3em/ repeat(5,1fr);
 
-  height: 70vh;
+  height: 50vh;
 }
 
 .display-color
@@ -141,7 +141,7 @@ footer {
 
 select{
     border-radius: 8px;
-border: 1px solid #D1D5DB;
+  border: 1px solid #D1D5DB;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -150,4 +150,37 @@ border: 1px solid #D1D5DB;
   cursor: pointer;
   box-shadow: 0px 1px 2px 0px #0000000D;
 
+}
+
+@media (max-width: 560px)
+{
+  #get-color-scheme {
+    flex-direction: column;
+    gap:0.25em;
+    align-items: stretch;
+  }
+
+  #input-options
+  {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input[type=color]
+{
+  width:100%;
+  height:3em;
+}
+
+  #generated-colors{
+    grid-template: repeat(6,1fr) 1em/ repeat(5,1fr);
+    row-gap: 1em;
+  }
+
+  .display-color-card
+  {
+    grid-row: 7 / 8;
+    padding:0.25em;
+    font-size: 0.8rem;
+  }
 }

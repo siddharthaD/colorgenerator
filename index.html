@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Color Schema Generator</title>
+  </head>
+  <body>
+
+    <main id="app">
+      <div id="input-options">
+        <form id="get-color-scheme">
+            <input type="color" id="color" value="green" aria-label="pick color">
+            <select name="mode" id="mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button type="submit">Get Color Scheme</button>
+        </form>
+      </div>
+      <div id="generated-colors">
+<!--        Set this in Javascript-->
+      </div>
+        <p id="message">Click on any color to copy</p>
+    </main>
+    <footer>
+      <a href="https://www.thecolorapi.com" target="_blank">Powered by Color API</a>
+      <a href="https://siddharthad.com">
+        Learn more about my work
+      </a>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
